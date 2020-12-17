@@ -216,9 +216,23 @@ h4 {
   margin: 0 8px;
 }
 
+/*Agregando los media queries con el metodo desktop-first (Se comienza desde la pantalla más grande)*/
+
+@media screen and (max-width: 1024px) {
+
+}
+
 @media screen and (max-width: 768px) {
   body {
     /*Condiciones para pantallas de menos de 768px*/
     border: 10px solid green;
   }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
