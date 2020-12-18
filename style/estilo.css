@@ -260,6 +260,7 @@ h4 {
     display: flex;
     margin-top: 20px;
     height: 300px;
+    text-align: center;
     justify-content: center;
     background-image: none;
   }
@@ -312,6 +313,7 @@ h4 {
     height: 180px;
     justify-content: center;
     background-image: none;
+    text-align: center;
   }
   .hero h1 {
     color: #2f303a;
@@ -349,6 +351,7 @@ h4 {
     height: 150px;
     justify-content: center;
     background-image: none;
+    text-align: center;
   }
   .header div {
     justify-content: center;
