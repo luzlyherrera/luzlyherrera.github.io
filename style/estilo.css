@@ -256,6 +256,13 @@ h4 {
   h2 {
     font-size: 1.5em;
   }
+  .hero {
+    display: flex;
+    margin-top: 20px;
+    height: 300px;
+    justify-content: center;
+    background-image: none;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -299,6 +306,24 @@ h4 {
   .knowledge img {
     margin: 10px;
   }
+  .hero {
+    display: flex;
+    margin-top: 20px;
+    height: 180px;
+    justify-content: center;
+    background-image: none;
+  }
+  .hero h1 {
+    color: #2f303a;
+    font-size: 1em;
+    margin-left: 2em;
+    line-height: 2em; /*Espacio entre fraces*/
+    font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  }
+  .header a {
+    font-size: 0.8em;
+    margin: 0em;
+  }
 }
 @media screen and (max-width: 480px) {
   .formation {
@@ -310,6 +335,34 @@ h4 {
   }
   h2 {
     font-size: 1em;
+  }
+  .hero h1 {
+    color: #2f303a;
+    font-size: 0.7em;
+    margin-left: 2em;
+    line-height: 2em; /*Espacio entre fraces*/
+    font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  }
+  .hero {
+    display: flex;
+    margin-top: 20px;
+    height: 150px;
+    justify-content: center;
+    background-image: none;
+  }
+  .header div {
+    justify-content: center;
+  }
+  .header p {
+    font-size: 1em;
+  }
+  .contact h4 {
+    font-size: 0.8em;
+  }
+  .contact .redes img {
+    width: 30px;
+    display: flex;
+    margin: 0 8px;
   }
 }
 
