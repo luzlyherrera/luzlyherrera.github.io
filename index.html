@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/estilo.css"/>
 </head>
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header"> <!-- Cabecera -->
         <div>
             <figure class="logo"> <!--Insertar figura-->
@@ -136,5 +137,20 @@
         </figure> 
         </div>
     </section> 
+    <script>
+        console.log(document.querySelector('.menu'));
+        const menu = document.querySelector('.menu');
+        const burgerButton=document.querySelector('#burger-menu');
+        
+        burgerButton.addEventListener('click', hideShow);
+
+        function hideShow(){
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');   
+            } else{
+                menu.classList.add('is-active');    
+            }
+        }
+    </script>
 </body>
 </html>
