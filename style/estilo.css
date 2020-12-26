@@ -406,7 +406,7 @@ h4 {
 }
 @media screen and (max-width: 480px) {
   .burger-button{
-    left:90vw
+    left:85vw
   }
   .formation {
     width: auto;
@@ -434,7 +434,7 @@ h4 {
     text-align: center;
   }
   .header div {
-    justify-content: center;
+    justify-content: left;
   }
   .header p {
     font-size: 1em;
