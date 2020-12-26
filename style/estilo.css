@@ -318,7 +318,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
   .burger-button {
     display: block;
     left: 94vw;
@@ -403,10 +403,14 @@ h4 {
     font-size: 0.8em;
     margin: 0em;
   }
+  .burger-button {
+    display: block;
+    left: 90vw;
+  }
 }
 @media screen and (max-width: 480px) {
-  .burger-button{
-    left:85vw
+  .burger-button {
+    left: 85vw;
   }
   .formation {
     width: auto;
@@ -453,9 +457,21 @@ h4 {
   }
 }
 
-@media screen and (max-width: 330px) {
-  .burger-button{
-    left:80vw
+@media screen and (max-width: 370px) {
+  .burger-button {
+    width: 30px;
+    height: 30px;
+   line-height: 30px;
+    font-size: 1.3em;
+    top: 22px;
+    left: 90vw;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .burger-button {
+    top: 13px;
+    left: 88vw;
   }
   .hero h1 {
     text-align: center;
@@ -473,5 +489,11 @@ h4 {
   }
   .contact h4 {
     font-size: 0.6em;
+  }
+  .header img{
+    width: 2em;
+  }
+  .header p{
+    font-size: 0.8em;
   }
 }
