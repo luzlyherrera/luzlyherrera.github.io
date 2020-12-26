@@ -138,11 +138,22 @@
         </div>
     </section> 
     <script>
-        console.log(document.querySelector('.menu'));
+        //console.log(document.querySelector('.menu'));
+        const small= window.matchMedia('screen and (max-width: 1025px)');
         const menu = document.querySelector('.menu');
+        //console.log(menu);
         const burgerButton=document.querySelector('#burger-menu');
+        //console.log(burgerButton);
         
-        burgerButton.addEventListener('click', hideShow);
+        small.addListener(validation);
+        
+        function validation(event){
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow);
+            }else{
+                burgerButton.removeEventListener('click', hideShow);
+            }
+        }
 
         function hideShow(){
             if (menu.classList.contains('is-active')) {
