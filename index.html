@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liliana Herrera</title>
-    <link rel="icon" type="image/png"  href="images/logo.png"><!--Poner un incono en el tab de la pagina de tipo png-->
-
-    <!--<link rel="stylesheet" href="style/media.css" media="screen and (max-width:768px)"/> forma de crear una hoja de estilos para cuando la pantalla sea menor a 768px-->
+    <link rel="icon" type="image/png"  href="images/logo.png">
     
     <link rel="stylesheet" href="style/estilo.css"/>
 </head>
 <body>
     <i class="icon-menu burger-button" id="burger-menu"></i>
-    <header class="header"> <!-- Cabecera -->
+    <header class="header">
         <div>
-            <figure class="logo"> <!--Insertar figura-->
-                    <img src="images/logo.png" alt="Logo de Liliana Herrera" width="50"> <!--Src: direccion del recurso que vamos a insertar, alt: Texto alternativo cuando el texto no logra cargarse-->
+            <figure class="logo">
+                    <img src="images/logo.png" alt="Logo de Liliana Herrera" width="50">
                 </figure>
-                <p><strong>Liliana</strong> Herrera</p>
+                <h1><strong>Liliana</strong> Herrera</h1>
         </div>    
-            <nav class="menu"> <!-- Menu de navegación -->
-                <!-- ul: listas desordenadas, ol: listas ordenadas -->
+            <nav class="menu">
                 <ul>
-                    <li> <!-- Elementos de listas -->
-                        <a class="link" href="#portafolio">Portafolio</a> <!-- Enlaces externos o internos a la pagina -->
-                    </li>
+                    <!-- <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li> -->
                     <li>
                         <a class="link" href="#formacion">Formación</a>
                     </li>
                     <li>
-                        <a class="link" href="#conocimientos">Conocimientos</a>
+                        <a class="link" href="#herramientas">Herramientas</a>
                     </li>
                     <li>
                         <a class="link" href="#contacto">Contacto</a>
@@ -39,14 +36,23 @@
     </header>
 
     <section class="hero"> 
-            <h1> 
-                ¡Hola! Soy <strong>ingeniera de sistemas</strong> en formación, <br> con diversos enfoques y conocimientos en el área <br> de la <strong>informática</strong> y las <strong>tecnologías</strong>, especificamente <br>en el <strong>desarrollo web</strong>, <strong>bases de datos</strong> y <strong>redes</strong>.
-            </h1>
+            <h2>
+                ¡Hola! Soy <strong>ingeniera de sistemas</strong> graduada de la Universidad Distrital, con una amplia gama de herramientas especializados en el ámbito informático, focalizada especialmente en el <strong>desarrollo Backend</strong> y la <strong>gestión de bases de datos</strong>.
+            </h2>
+            <img src="images/mujerprogramando.png" alt="Mujer programando">
     </section>
 
-    <h2>Portafolio</h2>
-
-    <section id="portafolio" class="portfolio">
+    <h2>Conocimientos</h2>
+    <section id="conocimientos" class="conocimientos">
+        <ul>
+            <li><strong>Desarrollo Backend:</strong> Experiencia en el diseño e implementación de soluciones Backend, destacando en el uso de <strong>Node.js y Java.</strong></li>
+            <li><strong>Sistemas de control de versiones:</strong> Habilidades profesionales en la implementación eficaz y gestión de sistemas de control de versiones, especialmente en entornos colaborativos, con <strong>énfasis en Git.</strong></li>
+            <li><strong>Bases de Datos:</strong> Gestión de bases de datos <strong>SQL</strong> y modelos de datos relaciónales para garantizar un rendimiento eficiente en aplicaciones.</li>
+            <li><strong>Resolución de problemas técnicos:</strong> Habilidad comprobada para abordar desafíos técnicos complejos, identificar soluciones efectivas y garantizar la integridad y eficacia de las aplicaciones Backend.</li>
+        </ul>
+    </section>
+<!--
+    <section id="portafolio" class="portafolio">
         <article class="project"> 
             <div class="project-details">
                 <h3 class="project-title">Nada por ahora:(</h3>
@@ -59,7 +65,7 @@
                 <img class="project-image" src="images/celularRoto.jpg" alt="">
             </figure>
         </article>
-    </section>
+    </section> -->
 
     <h2>Formación</h2>
 
@@ -71,7 +77,7 @@
             <div class="formation-detail">
                 <h3 class="formation-title">Universidad Distrital Francisco José de Caldas</h3>
                 <h5 class="formation-description">Ingeniería de Sistemas</h5>
-                <p class="formation-state"><small>En curso</small></p>
+                <p class="formation-state"><small>Finalizado</small></p>
             </div>
         </article>
         <article class="formation"> 
@@ -85,52 +91,149 @@
             </div>
         </article>
     </section>
-    <h2>Conocimientos</h2>
-    <section id="conocimientos" class="knowledge">
-        <figure>
-            <img src="images/javascript.png">
-        </figure>
-        <figure>
-            <img src="images/python.png">
-        </figure>
-        <figure>
-            <img src="images/php.png">
-        </figure>
-        <figure>
-            <img src="images/java.png">
-        </figure>
-        <figure>
-            <img src="images/c++.png">
-        </figure>
-        <figure>
-            <img src="images/html.png">
-        </figure>
-        <figure>
-            <img src="images/css.png">
-        </figure>
-        <figure>
-            <img src="images/oracle.png">
-        </figure>
-        <figure>
-            <img src="images/mysql.png">
-        </figure>
-        <figure>
-            <img src="images/postgres.png">
-        </figure>
+    <h2>Experiencia laboral</h2>
+    <section id="experienciaLaboral" class="experienciaLaboral">
+        <div class="experiencia">
+            <h3>2022-Actualidad</h3>
+            <h2>Desarrolladora de Software</h2>
+            <p>Red de Investigación de Tecnología Avanzada</p>
+            <ul>
+                <li>Realizar la gestión, administración y actualización del sitio web de RITA y los módulos asociados.</li>
+                <li>Desarrollar soluciones de software que apoyen los proyectos de investigación y algunos procesos de las dependencias de la Universidad Distrital.</li>
+                <li>Dar soporte a las aplicaciones de software de RITA ofrecidas a la comunidad académica e investigativa de la Universidad Distrital.</li>
+            </ul>
+        </div>
+        <div class="experiencia">
+            <h3>2021-2022</h3>
+            <h2>Ingeniera de Desarrollo I</h2>
+            <p>Cobiscorp</p>
+            <ul>
+                <li>Corregir bugs del proyecto</li>
+                <li>Soportar el software y producto desarrollado</li> 
+                <li>Generar instaladores del producto software</li>
+                <li>Apoyar en el desarrollo de software</li>
+                <li>Capacitar a otros en el funcionamiento básico del producto, herramientas y software </li>
+                <li>Probar las funcionalidades del producto</li>
+                <li>Reproducir bugs en el producto reportados por otros equipos o personas</li>
+                <li>Actualizar documentación del producto, herramienta o software</li>
+            </ul>
+        </div>
+    </section>
+    <h2>Herramientas</h2>
+    <section id="tools" class="knowledge">
+        <h3>Lenguajes de programación</h3>
+        <div class="herramientas">
+            <div class="herramienta">
+                <img src="images/java.png">
+                <div class="descripcion">
+                    <h4>Java</h4>
+                    <p>Nivel avanzado</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/php.png">
+                <div class="descripcion">
+                    <h4>PHP</h4>
+                    <p>Nivel avanzado</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/javascript.png">
+                <div class="descripcion">
+                    <h4>JavaScript</h4>
+                    <p>Nivel intermedio</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/python.png">
+                <div class="descripcion">
+                    <h4>Python</h4>
+                    <p>Nivel básico</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/Go-Logo_Blue.svg">
+                <div class="descripcion">
+                    <h4>Go</h4>
+                    <p>Nivel básico</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Frameworks</h3>
+        <div class="herramientas">
+            <div class="herramienta">
+                <img src="images/Expressjs.svg">
+                <div class="descripcion">
+                    <h4>Express.js</h4>
+                    <p>Nivel avanzado</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/laravel.png">
+                <div class="descripcion">
+                    <h4>Laravel</h4>
+                    <p>Nivel básico</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Motores de bases de datos</h3>
+        <div class="herramientas">
+            <div class="herramienta">
+                <img src="images/mysql.png">
+                <div class="descripcion">
+                    <h4>Mysql</h4>
+                    <p>Nivel avanzado</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/oracle.png">
+                <div class="descripcion">
+                    <h4>Oracle database</h4>
+                    <p>Nivel intermedio</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/postgres.png">
+                <div class="descripcion">
+                    <h4>PostgreSQL</h4>
+                    <p>Nivel intermedio</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Otras herramientas</h3>
+        <div class="herramientas">
+            <div class="herramienta">
+                <img src="images/html.png">
+                <div class="descripcion">
+                    <h4>HTML</h4>
+                    <p>Nivel avanzado</p>
+                </div>
+            </div>
+            <div class="herramienta">
+                <img src="images/css.png">
+                <div class="descripcion">
+                    <h4>CSS</h4>
+                    <p>Nivel intermedio</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contacto" class="contact">
         <div class="ubicacion">
             <figure>
                 <img src="images/ubicacion.png" alt="">
             </figure>
-            <h4>Bogotá, Colombia</h4>
+            <h4>Bogotá D.C. Colombia</h4>
         </div>
         <div class="redes">
         <figure>
             <a target="_blak" href="mailto:llherrerapo@gmail.com?Subject=Estoy%20interesado%20en%20trabajar%20contigo"><img src="images/correo.png" alt=""></a>
         </figure> 
         <figure>
-            <a target="_blak" href="https://github.com/luzlyherrera"><img src="images/git.png" alt=""></a>
+            <a target="_blak" href="https://github.com/llherrerap"><img src="images/git.png" alt=""></a>
         </figure> 
         <figure>
             <a target="_blak" href="https://wa.me/573503406870"><img src="images/wa.png" alt=""></a>

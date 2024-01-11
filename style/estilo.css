@@ -1,14 +1,3 @@
-/*Regla
-header (Selector) { (Inicio de la declaracion)
-    background (Propiedad): pink (Valor);
-}Fin de la declaracion
-*/
-
-/*Selectores de etiqueta: header - section - article - nav
-Selectores desendentes:body header div nav ul li a{}
-Selectores de clases: se le asigna un atributo class a la etiqueta para poder identificarlo en el css con un .nombreClase 
-Selectored de id: con el id que tengan asignados en la etiqueta se identifica en el css con #nombreID*/
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
@@ -60,8 +49,7 @@ h2 {
   color: #2f303a;
   letter-spacing: 2px;
 }
-.portfolio {
-  display: none;
+.portafolio {
   justify-content: center;
 }
 .project {
@@ -83,7 +71,6 @@ h2 {
   display: flex;
   margin-top: 20px;
   height: 300px;
-  background-image: url("../images/mujerprogramando.png");
   background-size: 440px 270px;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -93,11 +80,18 @@ h2 {
   border-radius: 10px;
 }
 
-.hero h1 {
+.hero h2 {
   color: #2f303a;
   margin-left: 80px;
   line-height: 50px; /*Espacio entre fraces*/
   font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 22px;
+}
+
+.hero img{
+  width: 450px;
 }
 
 ul {
@@ -129,7 +123,7 @@ figure {
   height: inherit;
 }
 
-.header p {
+.header h1 {
   font-weight: 500;
   letter-spacing: 5px; /*espacio entre letras*/
   text-transform: uppercase; /*Poner todo el texto en mayusculas*/
@@ -200,8 +194,9 @@ figure {
   font-size: 20px;
 }
 
-.knowledge {
+.knowledge .herramientas {
   justify-self: center;
+  margin: 50px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -210,12 +205,23 @@ figure {
 }
 
 .knowledge img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
   margin: 20px;
   /*flex-shrink:0;Capacidad de encogimiento, 0 nada de encogimiento, 1 mucho encogimiento*/
 }
 
+.knowledge h3{
+  text-align: center;
+  font-size: 24px;
+}
+
+.knowledge .herramienta{
+  margin: 0 20px;
+}
+
+.knowledge .herramienta .descripcion{
+  text-align: center;
+}
 h4 {
   color: #2f303a;
   font-size: 15px;
@@ -455,6 +461,46 @@ h4 {
     margin: 10px 10px;
     text-align: center;
   }
+}
+
+.conocimientos{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.conocimientos ul{
+  list-style: disc;
+  font-size: 18px;
+}
+
+.experienciaLaboral{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.experiencia{
+  background-color: rgb(247, 226, 218, 0.5);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.experiencia h2{
+  margin-left: 0px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.experiencia ul{
+  list-style: inside;
+}
+
+.experiencia p{
+  font-weight: 500;
+}
+
+.experiencia h3{
+  color: #787878;
 }
 
 @media screen and (max-width: 370px) {
